@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outportal Hero Recreation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #012220;
+            color: #dcfce7;
+        }
+        .font-serif-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-pale-green {
+            color: #dcfce7;
+        }
+        .bg-pale-green {
+            background-color: #dcfce7;
+        }
+        .bg-dark-green {
+            background-color: #012220;
+        }
+        .bg-nav-pill {
+            background-color: #12302e;
+        }
+        /* Custom thin font weight for the dash */
+        .font-hairline {
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body class="h-screen w-full overflow-hidden relative flex flex-col">
+
+    <!-- Background Placeholder (Simulating the video noise/texture mentioned in screenshot) -->
+    <img src="https://placehold.co/1920x1080/012220/012220" alt="Background Texture" class="absolute inset-0 w-full h-full object-cover -z-10 opacity-50 pointer-events-none">
+
+    <!-- Top Navigation -->
+    <header class="w-full px-8 py-6 border-b border-white/10 flex justify-between items-center z-20">
+        <div class="text-sm font-medium tracking-wide opacity-90">
+            AI-Powered Client Portals
+        </div>
+        
+        <div class="text-xl font-medium tracking-tight absolute left-1/2 transform -translate-x-1/2">
+            Outportal
+        </div>
+        
+        <a href="#" class="text-sm font-medium flex items-center gap-1 opacity-90 hover:opacity-100 transition-opacity">
+            LinkedIn
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </a>
+    </header>
+
+    <!-- Main Hero Content -->
+    <main class="flex-grow flex flex-col items-center justify-center relative z-10 -mt-10">
+        
+        <!-- Center Typography -->
+        <div class="text-center">
+            <!-- Line 1: Mixed Serif & Italic -->
+            <h1 class="text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.9] text-pale-green whitespace-nowrap">
+                <span class="font-serif-display font-normal">Branded</span>
+                <span class="font-serif-display italic font-normal ml-2 md:ml-4">Portal</span>
+                <span class="font-hairline mx-2 md:mx-6 opacity-80">—</span>
+                <span class="font-serif-display italic font-normal">Spaces</span>
+            </h1>
+            
+            <!-- Line 2: Sans Serif -->
+            <h2 class="text-5xl md:text-7xl lg:text-[7.5rem] leading-[0.9] font-normal mt-2 md:mt-4 text-pale-green">
+                Your Clients Will Love to Use.
+            </h2>
+        </div>
+
+        <!-- Floating Elements (Absolute positioning to match design layout) -->
+        
+        <!-- Left Floating Text -->
+        <div class="absolute left-[15%] top-[65%] hidden lg:block">
+            <span class="text-[10px] font-bold tracking-[0.2em] uppercase opacity-90">(SOC2 Certified)</span>
+        </div>
+
+        <!-- Right Floating Text -->
+        <div class="absolute right-[12%] top-[65%] max-w-[280px] hidden lg:block">
+            <p class="text-xl font-light leading-relaxed opacity-90">
+                Replace email chaos with secure, branded workspaces for your clients.
+            </p>
+        </div>
+
+        <!-- "AES-256 Secured" placeholder elements from screenshot corners -->
+        <div class="absolute bottom-32 left-8 flex items-center gap-2 opacity-50 text-xs">
+            <img src="https://placehold.co/20x20/012220/dcfce7?text=+" alt="icon" class="w-4 h-4 rounded-sm">
+            <span>Video noise</span>
+        </div>
+
+    </main>
+
+    <!-- Bottom Navigation & Controls -->
+    <footer class="absolute bottom-8 left-0 w-full px-8 flex justify-between items-end z-20">
+        
+        <!-- Left: Inquiry Button -->
+        <button class="bg-pale-green text-dark-green px-6 py-3 rounded-full flex items-center gap-2 text-xs font-bold tracking-wide hover:bg-white transition-colors group">
+            GET STARTED
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+        </button>
+
+        <!-- Center: Navigation Pills -->
+        <nav class="bg-nav-pill p-1.5 rounded-full flex gap-1 absolute left-1/2 transform -translate-x-1/2 shadow-lg">
+            <a href="#" class="bg-pale-green text-dark-green px-6 py-2.5 rounded-full text-xs font-bold tracking-wide">
+                HOME
+            </a>
+            <a href="#" class="text-pale-green px-6 py-2.5 rounded-full text-xs font-bold tracking-wide hover:bg-white/5 transition-colors">
+                SERVICES
+            </a>
+            <a href="#" class="text-pale-green px-6 py-2.5 rounded-full text-xs font-bold tracking-wide hover:bg-white/5 transition-colors">
+                WORK
+            </a>
+            <a href="#" class="text-pale-green px-6 py-2.5 rounded-full text-xs font-bold tracking-wide hover:bg-white/5 transition-colors">
+                ABOUT
+            </a>
+        </nav>
+
+        <!-- Right: Cookies & Scroll -->
+        <div class="flex items-center gap-6">
+            <!-- Cookie Banner -->
+            <div class="flex items-center gap-4 bg-transparent">
+                <span class="text-sm font-medium opacity-90 hidden md:inline">This website uses cookies</span>
+                <button class="bg-white text-dark-green px-5 py-2 rounded-full text-xs font-bold hover:bg-gray-200 transition-colors">
+                    Ok, thanks
+                </button>
+            </div>
+
+            <!-- Scroll Down Button -->
+            <button class="bg-pale-green text-dark-green w-12 h-12 rounded-full flex items-center justify-center hover:bg-white transition-colors hover:scale-105 transform duration-200">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </button>
+        </div>
+    </footer>
+
+</body>
+</html>
